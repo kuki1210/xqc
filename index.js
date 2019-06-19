@@ -9,7 +9,7 @@ var slot = [
 ];
 var interval = [-1,-1,-1];
 
-document.body.addEventListener('click', function(){
+function click(){
   if(complete == false){
     if(spinning[0]==0 && spinning[1]==0 && spinning[2]==1){
       stopSpinning(2);
@@ -29,7 +29,7 @@ document.body.addEventListener('click', function(){
       startSpinning(2);
     }
   }
-});
+}
 
 function startSpinning(pos){
   interval[pos] = setInterval(function(){
