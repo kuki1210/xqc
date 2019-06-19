@@ -31,6 +31,7 @@ document.body.addEventListener('touchstart',function(){
       startSpinning(2);
     }
   }
+}
 });
 
 document.body.addEventListener('click',function(){
