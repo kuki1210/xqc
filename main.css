@@ -1,0 +1,131 @@
+.body{
+  overflow: hidden;
+  user-select: none;
+}
+
+.anton{
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.area{
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 799px){
+  .area{
+    font-size: 60vw;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .area{
+    font-size: 480px;
+  }
+}
+
+.shake{
+  animation: shake 0.2s ease-out;
+}
+
+.areashake{
+  animation: areashake 0.2s ease-out;
+}
+
+@keyframes flash {
+  0%{
+    background-color: rgb(230,230,230);
+  }
+  100%{
+    background-color: rgb(255,255,255);
+  }
+}
+
+@keyframes shake {
+  0%{
+    transform: translateY(50px) scale(2.5);
+  }
+  25%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px) scale(0.9);
+  }
+  100%{
+    transform: translateY(0px) scale(1.0);
+  }
+}
+
+@keyframes areashake {
+  0%{
+    transform: translateY(20px) scale(1.1);
+  }
+  25%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px) scale(1.0);
+  }
+}
+
+@keyframes rainbow {
+  0%{
+    transform: scale(1.5);
+    background-color: rgb(220,220,220);
+    color: violet;
+  }
+  15%{
+    color: indigo;
+  }
+  30%{
+    color: blue;
+  }
+  45%{
+    color: green;
+  }
+  60%{
+    color: yellow;
+  }
+  75%{
+    color: orange;
+  }
+  90%{
+    color: red;
+  }
+  100%{
+    transform: scale(1.0);
+    background-color: rgb(255,255,255);
+    color: violet;
+  }
+}
+
+#mute{
+  font-size:20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.flash{
+  animation: flash 0.5s ease-out;
+}
+
+.rainbow{
+  animation: rainbow 0.326s linear 0s infinite;
+  filter: saturate(0.8);
+}
+
+.enabled{
+  opacity: 1.0;
+}
+
+.disabled{
+  opacity: 0.2;
+}
