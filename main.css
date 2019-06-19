@@ -1,7 +1,11 @@
 .body{
   overflow: hidden;
   user-select: none;
-  touch-action: manipulation
+  touch-action: manipulation;
+}
+
+html {
+  touch-action: manipulation;
 }
 
 .anton{
