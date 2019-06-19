@@ -13,6 +13,7 @@ var touched = false;
 document.body.addEventListener('touchstart',function(){
   if(complete == false){
     touched = true;
+  }
     if(spinning[0]==0 && spinning[1]==0 && spinning[2]==1){
       stopSpinning(2);
       if(slot[0].innerText == 'X' && slot[1].innerText == 'Q' && slot[2].innerText == 'C'){
@@ -31,7 +32,6 @@ document.body.addEventListener('touchstart',function(){
       startSpinning(2);
     }
   }
-}
 });
 
 document.body.addEventListener('click',function(){
