@@ -37,22 +37,23 @@ document.body.addEventListener('click',function(){
   }
   else{
     if(complete == false){
-    if(spinning[0]==0 && spinning[1]==0 && spinning[2]==1){
-      stopSpinning(2);
-      if(slot[0].innerText == 'X' && slot[1].innerText == 'Q' && slot[2].innerText == 'C'){
-        xqc();
+      if(spinning[0]==0 && spinning[1]==0 && spinning[2]==1){
+        stopSpinning(2);
+        if(slot[0].innerText == 'X' && slot[1].innerText == 'Q' && slot[2].innerText == 'C'){
+          xqc();
+        }
       }
-    }
-    else if(spinning[0]==0 && spinning[1]==1 && spinning[2]==1){
-      stopSpinning(1);
-    }
-    else if(spinning[0]==1 && spinning[1]==1 && spinning[2]==1){
-      stopSpinning(0);
-    }
-    else if(spinning[0]==0 && spinning[1]==0 && spinning[2]==0){
-      startSpinning(0);
-      startSpinning(1);
-      startSpinning(2);
+      else if(spinning[0]==0 && spinning[1]==1 && spinning[2]==1){
+        stopSpinning(1);
+      }
+      else if(spinning[0]==1 && spinning[1]==1 && spinning[2]==1){
+        stopSpinning(0);
+      }
+      else if(spinning[0]==0 && spinning[1]==0 && spinning[2]==0){
+        startSpinning(0);
+        startSpinning(1);
+        startSpinning(2);
+      }
     }
   } 
 });
