@@ -21,6 +21,7 @@ html {
   align-items: center;
   user-select: none;
   -webkit-user-select: none;
+  cursor:default;
 }
 
 @media screen and (max-width: 799px){
